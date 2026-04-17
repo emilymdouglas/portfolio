@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growth Project: Designing an Intelligence System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="/images/Favicon.svg">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h4><a href="index.html">Emily Douglas</a></h4>
+            <ul>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="about.html">About Me</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail">
+            <div class="project-detail-grid">
+                
+                <aside class="project-detail-aside">
+                    <h2>Designing an Intelligence System</h2>
+                    <p>My process for designing an intelligence layer to accelerate users via agent suggestions, point in time help, and more.</p>
+                    <p class="project-detail-role">Research • Systems Design • Product Management • UX Design • UI Design</p>
+                </aside>
+                <div class="project-detail-copy">
+                    <p>During my time at DigitalOcean, the heart of my work was focused on everything related to growing our user base through aquisition of new customers and growing engagement with existing users. While much of this work focused on the sign up and initial onboarding experience, retention of existing users was also a key focus for more mature cohorts and was the primary focus for this work.</p>
+                    
+                    <p>One of the primary cohorts I frequently reported on was a group of larger spend users. They were generally known to be more sticky and could greatly increase revenue when engaged. <b>I was tasked with growing our cohort of high spend users</b>, both by increasing the amount of users in this high spend category and increasing their overall spend.</p>
+
+                    <p>Now, a quick note on Growth product design - Growth orgs are inherently business oriented and focus on KPIs around sign up completes, engagement, retention, etc to ultimately grow revenue for the business. During my time as a growth designer, I quickly learned how to focus decisions around the user, while making my case to stakeholders about prioritizing certain UX decisions via business metrics. As it relates to this work, <b>my focus would be on identifying areas of the user journey that cause an increase risk of churn, (generally associated with growing pains when users start to outgrow their existing cloud infrastructure) and find a solution to help mitigate this. </b></p>
+                </div>
+
+                <aside class="project-detail-aside">
+                    <h3>Research</h3>
+                </aside>
+                <div class="project-detail-copy">
+                    <p>One thing that is nice about working in a growth-based organization is all the data. A teammate with much more robust snowflake and SQL skills than I kicked off this project by diving into our data lake to better understand how we might categorize users to then better understand their needs, user journey, pain points, churn risks, etc. An example of how we might categorize users is shown here:</p>
+
+                    <figure>
+                        <img src="/images/snowflake.png" alt="Snowflake query">
+                        <figcaption>Example of how we could categorize user behavior</figcaption>
+                    </figure>
+
+                    <p>Once we identified a key user segment that we wanted to target (in this case, users with heavy virtual machine usage), I started doing my own research to better understand their needs, pain points they may run into while scaling their infrastructure, and what considerations they may be considering. As I don't have a comphresive background as a developer, I used Google Gemini to triage my inital list of questions about these users and the technologies they are using. After this, I also made sure to validate my findings with my own dev team to ensure that we were moving in the right direction. See a sample of this work <a href="Scalers_usage_research.pdf" target="_blank">here</a>.</p>
+                </div>  
+
+                <aside class="project-detail-aside">
+                    <h3>Design & Implementation</h3>
+                </aside>
+                <div class="project-detail-copy">
+                    <p>After we conducted our research, I recommended we create a playbook that suggests personalized nudges based on a user's behavior, cloud infrastructure, and signals about resource usage and capacity. The nudges would suggest specific actions a user could take to get point in time help to troubleshoot issues or other growing pains they are showing signs of related to scaling their cloud infrastructure. As acting PM for this initiative, I was also responsible for writing up an initial PRD to guide the development of this feature.</p> 
+
+                    <p><b>I wanted to integrate these smart nudges into the UI to feel seamless and not like a marketing message.</b> To do this, I focused on educational based content with step-by-step instructions for whatever we were suggesting in the nudge and additional information on why this was benefical to the user at this point in their user journey. For example, the smart nudge shown below is shown on a global landing page where users manage their virtual machines. Once a user has more than 3+ VMs, it is generally best practice to leverage a load balancer to decrease management overhead and potential infrastructure risks.</p> 
+
+                    <figure>
+                        <img src="/images/nudge-collapsed.svg" alt="Nudge design for a Load Balancer">
+                        <figcaption>Example placement of a smart nudge for a load balancer</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="/images/System Health - Load balancers/via CLI.svg" alt="Nudge design for a Load Balancer">
+                        <figcaption>Example of a smart nudge for a load balancer</figcaption>
+                    </figure>   
+                    
+                    
+                    <p>Another consideration included in this work was how often users would encounter these nudges to ensure they were providing value without being intrusive. The aim was to build trust with users through targeted communication, not spam them with several nudges (past research on the effectiveness of banners, pop ups, and other marketing messages showed a strong case of user fatigue from overuse throughout the platform). In order to due this, I created an outline for a nudge orchestration system that helped answer the following:</p>
+
+                    <ul>
+                        <li>When and where should we show a nudge?</li>
+                        <li>If users are eligible for more than one nudge, which one should we prioritize to show?</li>
+                        <li>How often should we show nudges?</li>
+                        <li>How long is the cool down period once a user interacted with a nudge?</li>
+                    </ul>
+
+                    <p>Besides these smart nudges, there was also an ongoing initiative within the company to create more inference based experiences throughout the platform via agents and other AI tools. While we had a very loose design style for these inference-based elements, there was no formal guidance in place for sytling, components, or interaction patterns. How should smart nudges interact with other AI-driven experiences? As we continued to accerlate both the nudge and inference based user experiences, we needed to ensure a cohesive user experience for both styling and interactions.</p>
+
+                    <p><b>This led to a tangential workstream focused on creating a more cohesive design language for all AI-driven experiences within the platform.</b> Especially in the AI age we current reside, it is no longer acceptable to have a AI assistance that feels disconnected from the rest of the user experience. During this process, <b> I outlined design principles, interaction patterns, and visual guidelines to ensure consistency across the platform and ensure that it felt cohesive and integrated.</b> This involved collaborating with various other product designers to understand what styling they have used for inference-based experiences in the past, PMs to understand any business requirements other business units may have, and engineers to understand potential technical constraints and existing coded components. See the full report <a href="https://docs.google.com/document/d/1h6zpc_3w0HwUsl7aaj230u0BAYEftKNaq4cE0qgP4h4/edit?tab=t.0#heading=h.gk87vvz5the6" target="_blank">here</a>.</p>
+                
+                </div> 
+
+                <aside class="project-detail-aside">
+                    <h3>Project Outcomes</h3>
+                </aside>
+                <div class="project-detail-copy">
+                    <p>After launching the nudge, we saw a +40% lift in resource creation for users that were shown the nudge compared to the control group. This was a huge win for our team and showed that we were able to successfully identify a pain point for users and provide them with helpful information at the right time. Additionally, by creating a more cohesive design language for all AI-driven experiences within the platform, we were able to create a more seamless and integrated user experience for our customers, allowing us to more easily scale these expereinces in the future. Finally, a few final learnings from this work included:</p>
+                    <ul>
+                        <li>Better understanding of what it takes to build a roadmap and define team priorities for greenfield work</li>
+                        <li>How to leverage AI to help accelerate user research</li>
+                        <li>Systems design is much like wrangling cats (good thing I like cats?)</li>
+                    </ul>
+                    
+                </div> 
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Emily Douglas</p>
+    </footer>
+</body>
+</html>
