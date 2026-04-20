@@ -6,7 +6,10 @@
     <title>Growth Project: Moving the Paywall</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="./images/Favicon.svg">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4537bbc (updates)
 
 </head>
 <body>
@@ -28,15 +31,18 @@
                 
                 <aside class="project-detail-aside">
                     <h2>Moving the Paywall: Accelerating User Time to Value</h2>
-                    <p>Short description of the project</p>
+                    <p>My process when moving a paywall out of sign up and further down the user journey</p>
                     <p class="project-detail-role">Research • UX Design • UI Design • Collaboration • End to End</p>
                 </aside>
                 <div class="project-detail-copy">
                     
-                    <p>intro</p>
+                    <p>I was the lead designer for this project and was excited by the challenge of working on a more system wide experience that would require several design elements and flows to ensure the best possible user experience.</p>
                     <figure>
                         <img src="./images/mtpw-whiteboarding.svg" alt="whiteboarding of user flows">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4537bbc (updates)
                         <figcaption>Whiteboarding to map out user flows</figcaption>
                     </figure>
                     <p>While projects may require different approaches, there are a few things that remain constant throughout — designing in ambiguity, having limited access to end users, working with a wide range of stakeholders, and general takeaways of working on enterprise software.</p>
@@ -46,27 +52,78 @@
                     <h3>Research</h3>
                 </aside>
                 <div class="project-detail-copy">
-                    <p>description</p>
-                </div>
-            
+                    <p>To begin this project, I started to review past research that others had conducted during a previous attempt at moving the paywall out of the sign up flow and into the console. While there was a lot of tribal knowledge and lost research due to moving research platforms, I was able to gather several key insights from the last attempt to help inform changes to make this project more likely to be successful. Some examples:</p>
 
-                <aside class="project-detail-aside">
-                    <h3>Stakeholders on Stakeholders</h3>
-                </aside>
-                <div class="project-detail-copy">
-                    <p>description</p>
-                </div>
+                    <ul>
+                        <li>Clear communication about the paywall and its placement in the user journey is crucial for user understanding and acceptance. This was a critial piece that was missing in the previous attempt.</li>
+                        <li>Users know that at some point they will need to provide payment information to create cloud resources. However, adding a payment method can be a barrier to entry for some users, especially those that are signing up to use the platform for work and do not have ready access to a company credit card.</li>
+                        <li>Users like being able to explore the platform without needing to provide payment information upfront. </li>
+                    </ul>
 
+                    <p>Finally, I wanted to better understand current pain and friction points in the current user experience when interacting with the paywall. I created a "Why Waterfall" diagram to dig into these pain points and identify root causes that we could considering addressing as a part of this work. I presented this to the lead product manager of this initiative and worked with her to determine what concerns to prioritize moving forward. Some of the key insights we decided to address included:</p>
+                    <ul>
+                        <li>Users signing up to use the platform for work may not have ready access to a company credit card</li>
+                        <li>Lack of communication creates a black box experience</li>
+                        <li>General lack of trust - why do we need this information?</li>
+
+                    </ul>
+                    <figure>
+                        <img src="./images/mtpw - why waterfall.png" alt="Why Waterfall diagram">
+                        <figcaption>Why Waterfall Diagram</figcaption>
+                    </figure>
+
+                </div>
+    
                 <aside class="project-detail-aside">
                     <h3>Design & Implementation</h3>
                 </aside>
                 <div class="project-detail-copy">
+<<<<<<< HEAD
                     <p>description</p>
                     <figure>
                         <img src="./images/mtpw-billing-example.png" alt="Paywall UI example">
 
                         <figcaption>Finished UI for adding a payment method</figcaption>
+=======
+                    <p></p>
+                    <p><b>User Journey:</b> After conducting user research and analyzing the "Why Waterfall" diagram, I started to map out the ideal user journey to prompt users to add a payment method. This included exploring different touchpoints and potential pitfalls of each. Ultimately, I decided to push the paywall as far back into the user journey as possible - prompt users to add a payment method before they are able to create a resource. This allowed for users to explore everywhere in the platform, including the product create pages (frequently visited when users are interested in comparing prices and understanding what type of configuration settings are available for various resources).  </p>
+
+                     <figure>
+                        <img src="./images/mtpw-whiteboarding.svg" alt="Whiteboarding of user flows">
+                        <figcaption>Whiteboarding of User Journey</figcaption>
+>>>>>>> 4537bbc (updates)
                     </figure>
+                    
+                    <p><b>UI Design:</b>After outlining the user journey, I began designing the UI for the paywall. Based on my research at the beginning of this project, I knew that I needed to focus on clear communication to ensure users would not be surprised or run into additional friction wherever the paywall was placed. Because of this, I opted to display clear messaging and calls to action in the platform if a user had not yet added a payment method. Messaging was kept clear and concise with additional documentation links in case users had concerns or questions and allowed users to pre-emptively add a payment method before they began creating resources.</p>
+                    
+                    <figure>
+                        <img src="./images/mtpw - banner.png" alt="Paywall UI example">
+                        <figcaption>Finished UI for adding a payment method - banner</figcaption>
+                    </figure>
+
+                    <p>Next, I designed what the paywall experience would look like when a user didn't have a payment method added. I wanted to keep this process as friction free as possible and keep the user in context as much as possible. While there was a slight challenge to due this on some pages due to a current migration from one development framework to another, I was able to limit the amount of steps required by utlizing a modal directly on the page to add a payment method. When that wasn't possible for pages using the old development framework, I directed users to the existing billing page to add their payment method.</p>
+                    <figure>
+                        <img src="./images/mtpw - react page.png" alt="Paywall UI example">
+                        <figcaption>Finished UI for adding a payment method - resource create flow</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="./images/mtpw-billing-example.png" alt="Paywall UI example">
+                        <figcaption>Finished UI for adding a payment method - billing page</figcaption>
+                    </figure>
+                </div>
+                
+                <aside class="project-detail-aside">
+                    <h3>Stakeholders on Stakeholders</h3>
+                </aside>
+                <div class="project-detail-copy">
+                    <p>One major challenge for this work included the amount of coordination required from a variety of stakeholders and teams. Since we were moving the paywall out of the sign up flow (somehthing my team exclusively owned) and into a range of areas in the platform that were owned by other teams, this meant that there were many designers, product managers, and engineers that we needed to collaborate with to ensure a smooth transition and successful implementation. To help with this collaboration, I ensured that relevant stakeholders were included in various stages of the design process through meetings, slack communications, etc. This helped build new lines of communications and ensured we were all aligned on timelines, project scope, and deliverables.</p>
+                </div>
+
+                <aside class="project-detail-aside">
+                    <h3>Outcomes</h3>
+                </aside>
+                <div class="project-detail-copy">
+                    <p>Overall, this project was a success from team collaboration, user experience, and business standpoints. After implementing the changes, we saw a slight increase in the amount of users completing the sign up process, a decrease of users adding a payment method (-8%), and a slight increase in users becoming engage by spinning up a resource (+2%). This showed that the new placement of the paywall allowed users to explore the platform until they were ready to commit, leading to a more positive user experience and allowed the business to better identify more high intent users.</p>
                 </div>
             </div>
         </section>
