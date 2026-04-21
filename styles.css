@@ -324,3 +324,14 @@ li {
 .small-margin {
     margin-bottom: 0.5rem;
 }
+
+.zoomable {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+.zoomable:focus {
+  transform: scale(2); /* Enlarges by 2x */
+  outline: none;
+  position: relative;
+  z-index: 10;
+}
