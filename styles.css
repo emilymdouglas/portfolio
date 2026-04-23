@@ -227,7 +227,7 @@ footer {
 
 .project-detail-aside h2 {
     font-size: 2.75rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
 }
 
 .project-detail-aside h3 {
@@ -311,7 +311,8 @@ li {
 
 @media (max-width: 768px) {
     .project-detail-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 16px;
         row-gap: 2rem;
     }
 
