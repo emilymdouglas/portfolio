@@ -44,18 +44,7 @@
                     <h3>Research</h3>
                 </aside>
                 <div class="project-detail-copy">
-                    <p>The first step of this project was to understand our target users better through data analysis. One challenge was determining how to categroize users to create more targeted and relevant experiences. A teammate with much more robust snowflake and SQL skills than I kicked off this project by diving into our data lake to better understand how we might categorize users to then better understand their needs, user journey, pain points, churn risks, etc. An example of how we might categorize users is shown here:</p>
-
-                    <figure>
-                        <img src="./images/snowflake.png" alt="Snowflake query">
-                        <figcaption>Example of how we could categorize user behavior</figcaption>
-                    </figure>
-                    
-                    <p>Once we identified these potential user segments, we opted to focus on the largest one as ouor key user segment to target (in this case, users with heavy virtual machine usage) to keep scope manageable and help validate our approach before moving on to target other segments. I started doing my own qualitative research to better understand their needs, pain points they may run into while scaling their infrastructure, and what considerations they may be making. To accelerate my understanding of the technial aspects of buildingcloud infrastructure and common pain points, I supplemented my research with AI-assisted exploration and validated findings with my dev team to ensure that we were moving in the right direction. See a sample of this work <a href="Scalers_usage_research.pdf" target="_blank">here</a>. Once this was complete, I started outlining a user journey that our target users may go through, including when and where their pain points are.</p>
-                    <figure>
-                        <img src="./images/User journey - scalers work.png" alt="User journey">
-                        <figcaption>User journey outline that helped showcase pain points as users grow</figcaption>
-                    </figure> 
+                    <p>Research - investigating what other designers have done in this space, consolidating artifacts, considering surface areas, technical constraints</p>
                 </div>  
 
                 <aside class="project-detail-aside">
@@ -88,9 +77,9 @@
                     <h3>Designing the Orchestration System</h3>
                 </aside>
                 <div class="project-detail-copy">
-                    <p>Another consideration included in this work was how often users would encounter these nudges to ensure they were providing value without being intrusive. The aim was to build trust with users through targeted communication, not spam them with several nudges (past research on the effectiveness of banners, pop ups, and other marketing messages showed a strong case of user fatigue from overuse throughout the platform).</p> 
-                        
-                    <p>Besides these smart nudges, there was also an ongoing initiative within the company to create more inference based experiences throughout the platform via agents and other AI tools. How should smart nudges interact with other AI-driven experiences? As we continued to accelerate both the nudge and inference based user experiences, we needed to ensure a cohesive user experience for both styling and interactions. In order to do this, I created an <a href="https://docs.google.com/document/d/1h6zpc_3w0HwUsl7aaj230u0BAYEftKNaq4cE0qgP4h4/edit?tab=t.85bk00e876jn#heading=h.ed0nlp387f3k" target="_blank">outline for a nudge orchestration system</a> that helped answer the following:</p>
+                    <p>Another consideration included in this work was how often users would encounter these nudges to ensure they were providing value without being intrusive. The aim was to build trust with users through targeted communication, not spam them with several nudges (past research on the effectiveness of banners, pop ups, and other marketing messages showed a strong case of user fatigue from overuse throughout the platform). </p>
+
+                    <p>Besides these smart nudges, there was also an ongoing initiative within the company to create more inference based experiences throughout the platform via agents and other AI tools. How should smart nudges interact with other AI-driven experiences? As we continued to accerlate both the nudge and inference based user experiences, we needed to ensure a cohesive user experience for both styling and interactions. In order to do this, I created an <a href="https://docs.google.com/document/d/1h6zpc_3w0HwUsl7aaj230u0BAYEftKNaq4cE0qgP4h4/edit?tab=t.85bk00e876jn#heading=h.ed0nlp387f3k" target="_blank">outline for a nudge orchestration system</a> that helped answer the following:</p>
 
                     <ul>
                         <li>When and where should we show a nudge?</li>
@@ -98,10 +87,14 @@
                         <li>How often should we show nudges?</li>
                         <li>How long is the cool down period once a user interacted with a nudge?</li>
                     </ul>
+
                     <figure>
                         <img src="./images/Nudge system flow chart.png" alt="Nudge orchestration system flow chart">
                         <figcaption>Nudge orchestration system flow chart</figcaption>
                     </figure>  
+
+                    
+                    <p><b>This led to a tangential workstream focused on creating a more cohesive design language for all AI-driven experiences within the platform.</b> Especially in the AI age we current reside, it is no longer acceptable to have a AI assistance that feels disconnected from the rest of the user experience. During this process, <b> I outlined design principles, interaction patterns, and visual guidelines to ensure consistency across the platform and ensure that it felt cohesive and integrated.</b> This involved collaborating with various other product designers to understand what styling they have used for inference-based experiences in the past, PMs to understand any business requirements other business units may have, and engineers to understand potential technical constraints and existing coded components. See the full report <a href="https://docs.google.com/document/d/1h6zpc_3w0HwUsl7aaj230u0BAYEftKNaq4cE0qgP4h4/edit?tab=t.0#heading=h.gk87vvz5the6" target="_blank">here</a>.</p>
 
                 </div> 
 
@@ -109,7 +102,7 @@
                     <h3>Project Outcomes</h3>
                 </aside>
                 <div class="project-detail-copy">
-                    <p>After launching the nudge, we saw a +40% lift in resource creation for users that were shown the nudge compared to the control group. This work validated the effectiveness of behavior-driven guidance, but only scratched the surface. Future work would focus on expanding the system across additional user segments and platform surface areas, refining orchestration logic based on real-world usage, and further exploring where to integrate guidance into core workflows to create a more proactive and adaptive user experience.</p>
+                    <p>outcomes</p>
                 </div> 
 
 
