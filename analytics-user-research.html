@@ -26,7 +26,7 @@
         <section class="project-detail">
             <div class="project-detail-grid">
                 <aside class="project-detail-aside">
-                    <h2>Analytics Rule Builder</h2>
+                    <h2>Designing an Analytics Rule Builder</h2>
                     <p>A practice in leveraging research to understand problems and inform solutions.</p>
                     <p class="project-detail-role">UX Research • Data Analysis • UX Design • UI Design • End to End</p>
                     
@@ -34,29 +34,27 @@
                 </aside>
                 <div class="project-detail-copy">
                     
-                    <p>During this project, I led an open-ended research initiative to identify usability improvements within the analytics experience by conducting user interviews and an in-product survey. I synthesized findings into 11 actionable UX recommendations that informed product roadmap priorities. Based on these insights, I then redesigned severalworkflows and the UI for the analytics rule builder, focusing on clarity, efficiency, and scalability. I then validated the final designs through usability testing, achieving 100% task success before handing off for implementation.</p>
+                    <p>The analytics rule builder was powerful but difficult to understand, leading to inefficient workflows, inconsistent rule creation, and low confidence in outputs. The problem space was loosely defined, with limited visibility into how users actually created, managed, and interpreted rules.</p>
+
+                    <p>I led an exploratory research effort to better define the problem, combining user interviews, in-product surveys, and workflow analysis to uncover gaps in usability, mental models, and system structure. These insights revealed that users struggled not just with the interface, but with understanding how rules were constructed and interacted across the system.</p>
+
+                    <p>Based on these findings, I redesigned the rule-building experience to better support user workflows, simplify complex logic, and improve clarity at each step. The final solution introduced a more structured, scalable interface that reduced friction, improved usability across screen sizes, and enabled users to complete key tasks with greater confidence.</p>
 
                 </div>
                 
+                <aside class="project-detail-aside">
+                    <h3>Background</h3>
+                </aside>
+                <div class="project-detail-copy">
+                    <p>The analytics rule builder is a critical part of a cybersecurity platform, enabling users to define how and when incoming data triggers alerts. However, users reported friction when creating and managing rules, often leading to errors, inefficiencies, and lack of trust in what they were building. Initially, this feedback was fragmented, and there was limited understanding of how users actually approached rule creation across different contexts. This made it difficult to prioritize improvements or identify where the experience was breaking down, and became one of the primary objectives of this work.</p>
+                   
+                </div>
                  
                 <aside class="project-detail-aside">
                     <h3>Research & Discovery</h3>
                 </aside>
                 <div class="project-detail-copy">
                     <p>To begin this project, <b>I was tasked with conducting research to discover what we could improve in our analytics area.</b> Since this was very open ended, I opted to conduct a series of interviews with both internal and external users and stakeholders to better understand areas where we could improve and a survey to find out how to improve the main analytics grid management area we knew needed help. The survey was embedded in the analytics grid page via Pendo.</p>
-                    <p>Sample of some survey questions:</p>
-                    <ul>
-                        <li>What are your primary objectives when you navigate to the analytics rule area? (multiple choice selection with option to answer "Other")</li>
-                        <li>How helpful would it be to group or bundle rules together to help organize them within the analytics rule area? (Likert scale)</li>
-                        <li>What other thoughts or feedback do you have about the analytics rule experience in Axon that you think we should know? (Free text input)</li>
-                    </ul>
-                    
-                    <p>Sample of some interview questions:</p>
-                    <ul>
-                        <li>Can you walk me through your process when creating an analytics rule?</li>
-                        <li>How much information do you include in the rule description field? Is this information for admin/rule creators or for analysts?</li>
-                        <li>How do you typically search for a specific rule? ​</li>
-                    </ul>
                 </div>
 
                 <aside class="project-detail-aside">
@@ -65,12 +63,13 @@
                 <div class="project-detail-copy">
                     <p>After conducting <b>four interviews and gathering five survey results</b>, I started distilling data into actionable items. This included uploading and tagging the research results in Dovetail to see patterns and creating a research report with <b>general findings of 11 UX recommendations for improvements</b> and smaller insights related to each recommendation with specific data points that informed it. These findings were presented to the project management team to help inform roadmap items and priority for design and development work. </p>
 
-                    <p>Sample of some recommendations:</p>
+                    <p>Sample of some findings and example recommendations:</p>
                     <ul>
-                        <li>Consolidate grid row actions to be consistent across single and bulk action options</li>
-                        <li>Have option to export rules grid to help with reporting and understanding coverage</li>
-                        <li>Allow users to map fields between rule blocks in the analytics rule builder to expand use case coverage </li>
-                        <li>Improve filter query UI to be easier to edit and view in the rule builder ​</li>
+                        <li>Users lacked a clear mental model of how rules were structured and executed -> Add a plain language explanation of the rules a user was building, add a testing feature so users could test their rules in real-time before deploying</li>
+                        <li>Important actions were inconsistently surfaced, creating confusion between single and bulk workflows -> Consolidate grid row actions to be consistent across single and bulk action options</li>
+                        <li>Users didn't have an easy way to understand overall system rule coverage -> Have option to export rules grid to integrate with third party software tohelp with reporting and understanding coverage</li>
+                        <li>Current UI limited complex rule creation and mapping ->Allow users to map fields between rule blocks in the analytics rule builder to expand use case coverage and complexity </li>
+                        <li>Small screens cut off rule building content -> Improve filter query UI to be easier to edit and view in the rule builder, espeically for small screens and long queries</li>
                     </ul>
 
                     <figure>
@@ -89,6 +88,7 @@
                         <li>Use space more efficiently</li>
                         <li>Help users understand what they are building</li>
                         <li>Simplify group bys and complex logic between rule blocks</li>
+                        
                     </ul>
                     <figure>
                         <img src="./images/analytics rule builder MVP.png" class="zoomable" tabindex="0" alt="MVP design">
@@ -116,12 +116,13 @@
                     <h3>Final Design</h3>
                 </aside>
                 <div class="project-detail-copy">
-                    <p><b>I landed on a final design that simplified the workflow and better utilized space </b>through expandable cards and a more vertical-based layout. This scaled better for smaller screens while still keeping relevant information visible and allowed for additional testing and guidance features in the builder. This work concluded with several interviews to validate the final designs with a usability test, where 100% of users were able to successfully complete their required tasks, before being handed off to developers for implementation.</p>
+                    <p><b>I landed on a final design that simplified the workflow and better utilized space </b>through expandable cards and a more vertical-based layout. This scaled better for smaller screens while still keeping relevant information visible and allowed for additional testing and guidance features in the builder. The redesign improved task success in usability testing (100% completion) and reduced confusion around rule structure. Additionally, the research findings directly informed roadmap prioritization, aligning product and engineering teams around a clearer set of user-driven improvements.</p>
                     <figure>
                         <img src="./images/analytics rule builder final design + annotation.png" class="zoomable" tabindex="0" alt="final design of analytics rule builder">
 
                         <figcaption>Final design of the analytics rule builder</figcaption>
                     </figure>
+                    <p> While we were able to land on a final design, there is always more work to be done. If I had more time, I would continue to explore ways to better support collaboration and rule governance across platform users, further simplify advanced logic handling for less technical users, and work on enabling a more robust test environment for users.</p>
                 </div>
             </div>
         </section>
