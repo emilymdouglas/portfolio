@@ -32,7 +32,7 @@
                 </aside>
                 <div class="project-detail-copy">
 
-                    <p>As users scale their cloud infrastructure, many struggle to understand when and how to optimize their resources, leading to inefficiencies, increased costs, and churn risk. The challenge to help mitigate this was not just surfacing information, but determining what guidance to provide, when to provide it, and how to deliver it without overwhelming users.</p>
+                    <p>As users scale their cloud infrastructure, many struggle to understand when and how to optimize their resources, leading to inefficiencies, increased costs, and churn risk. A key challenge to help mitigate this was not just surfacing information, but determining what guidance to provide, when to provide it, and how to deliver it without overwhelming users.</p>
 
                     <p>I led the design of a behavior-driven system that delivered personalized, in-product recommendations based on user activity and infrastructure signals. This work included defining user segments, mapping growth-stage pain points, and designing both the experience and underlying orchestration logic to ensure relevance and avoid user fatigue.</p>
 
@@ -44,16 +44,9 @@
                     <h3>Research</h3>
                 </aside>
                 <div class="project-detail-copy">
-                    <p>The first step of this project was to understand our target users better through data analysis. <b>One challenge was determining how to categorize users to create more targeted and relevant experiences</b>. A teammate with much more robust snowflake and SQL skills than I kicked off this project by diving into our data lake to better understand how we might categorize users to then better understand their needs, user journey, pain points, churn risks, etc. An example of how we might categorize users is shown here:</p>
-
-                    <figure>
-                        <img src="./images/snowflake.png" alt="Snowflake query">
-                        <figcaption>Example of how we could categorize user behavior</figcaption>
-                    </figure>
-                    
-                    <p>Once we identified these potential user segments, we opted to focus on the largest one as our key user segment to target (in this case, users with heavy virtual machine usage) to keep scope manageable and help validate our approach before moving on to target other segments. </p>
-                    
-                    <p> I started doing my own qualitative research to better understand their needs, pain points they may run into while scaling their infrastructure, and what considerations they may be making. To accelerate my understanding of the technial aspects of buildingcloud infrastructure and common pain points, I supplemented my research with AI-assisted exploration and validated findings with my dev team to ensure that we were moving in the right direction. See a sample of this work <a href="Scalers_usage_research.pdf" target="_blank">here</a>. Once this was complete, I started outlining a user journey that our target users may go through, including when and where their pain points are.</p>
+                    <p>The first step of this project was to understand our target users better through data analysis. <b>One challenge was determining how to categorize users to create more targeted and relevant experiences</b>. To identify high-risk user segments, I partnered with an engineer to analyze behavioral patterns and infrastructure usage. </p>
+                        
+                    <p>Once we identified a key segment of high-value users who were experiencing scaling challenges, I started doing my own qualitative research to better understand their needs, pain points they may run into while scaling their infrastructure, and what considerations they may be making. To accelerate my understanding of the technial aspects of building cloud infrastructure and common pain points, I supplemented my research with AI-assisted exploration and validated findings with my dev team to ensure that we were moving in the right direction. See a sample of this work <a href="Scalers_usage_research.pdf" target="_blank">here</a>. Once this was complete, I started outlining a user journey that our target users may go through, including when and where their pain points are.</p>
                     
                     <figure>
                         <img src="./images/User journey - scalers work.png" alt="User journey">
@@ -65,7 +58,7 @@
                     <h3>Designing the UI</h3>
                 </aside>
                 <div class="project-detail-copy">
-                    <p>After we conducted our research, <b>I recommended we create a system of personalized, behavior-driven nudges embedded within the product experience, supported by an orchestration layer that determined when, where, and how guidance should be delivered</b>. The nudges would suggest specific actions a user could take to get point in time help to troubleshoot issues or other growing pains they are showing signs of related to scaling their cloud infrastructure. As acting PM for this initiative, I was also responsible for writing up an initial PRD to guide the development of this feature.</p> 
+                    <p>After we conducted our research, <b>I recommended we create a system of personalized, behavior-driven nudges embedded within the product experience, supported by an orchestration layer that determined when, where, and how guidance should be delivered</b>. As acting PM for this initiative, I was also responsible for writing up an initial PRD to guide the development of this feature in addition to my design work. </p> 
 
                     <p>I wanted to integrate these smart nudges into the UI to feel seamless and not like a marketing message. To do this, I focused on the following: </p>
                         <ul>
@@ -74,7 +67,7 @@
                             <li>Building trust through transparency (explaining why a recommendation was relevant) and only showing nudges that were truly in a user's best interest</li>
                         </ul>
                     
-                    <p> This culminated in an expandable card design to display nudges on relevant surface areas within the platform. While we had a very loose design style for these inference-based elements, there was no formal guidance in place for styling, components, or interaction patterns. This ultimately lead to a tangential work stream focused on creating a more cohesive design language for all AI-driven experiences within the platform (see my Creating an AI Design Framework project).</p>
+                    <p> This culminated in an expandable card design that integrated nudges into existing workflows and delivered actionable, step-by-step guidance at the point of need. Rather than feeling like external messaging, the goal was to build trust through relevance and clarity—helping users understand not just what to do, but why it mattered in their current context. While we had a very loose design style for these inference-based elements, there was no formal guidance in place for styling, components, or interaction patterns. This work directly informed a broader initiative to create a cohesive design framework for AI-driven experiences across the platform (see my Creating an AI Design Framework project to learn more).</p>
 
                     <figure>
                         <img src="./images/nudge-collapsed.svg" alt="Nudge design for a Load Balancer">
