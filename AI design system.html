@@ -36,6 +36,18 @@
                     <p>Rather than simply standardizing UI, I focused on how AI should behave within the product. This included defining how it communicates, maintains context across workflows, and integrates into existing user journeys. This framework created a foundation for scaling AI features in a way that remained intuitive and consistent for users.</p>
                 </div>
 
+                <aside class="project-detail-aside">
+                    <h3>Problem Context</h3>
+                </aside>
+                <div class="project-detail-copy">
+                    <p>As multiple teams began building AI and inference powered features, the experience became fragmented across the platform. Without a shared application and styling framework, these inconsistencies risked confusing users, eroding trust, and creating implmentation inconsistencies. In order to help mitigate these issues, this work focused on defining a framework across three key areas to move beyond surface-level consistency and create a cohesive, scalable experience across the platform. </p>
+                    <ul>
+                        <li>Presentation: how this content is visually presented</li>
+                        <li>Interaction: how users engage with AI (inputs, outputs, feedback loops)</li>
+                        <li>Behavior: how AI responds, maintains context, and integrates across workflows</li>
+                    </ul>
+                
+                </div>      
 
                 <aside class="project-detail-aside">
                     <h3>Research</h3>
@@ -45,7 +57,7 @@
                         
                     <p>To begin, I conducted an audit of all existing inference-based features across the platform, documenting the design patterns, styles, and interactions. During this time, I documented my findings and presented them to the rest of the design team to ensure I wasn't missing any existing patterns or styles that were being used. I wanted this to be a collaborative effort to ensure that this framework would be adopted by others and scalable in the future.</p>
                         
-                    <p>Besides other product designers, I also made sure to collaborate with several front end engineers to better understand what was in Storybook (our coded design system) and what has been coded using custom, one-off components already. This helped me better understand existing components and technical constraints for potential component development. After all this work, the audit revealed several inconsistencies including: </p>
+                    <p>Besides other product designers, I also made sure to collaborate with several front end engineers to better understand what was in Storybook (our coded design system) and what has been coded using custom, one-off components already. This helped me better understand existing components and technical constraints for potential component development. After all this work, the audit revealed several insights: </p>
                     <ul>
                         <li>Inconsistent interaction patterns across different AI-driven features (AI products that users can build vs AI suggestions that come from the system)</li>
                         <li>Existing design system components were not built to support dynamic, inference-based behavior</li>
@@ -64,12 +76,12 @@
                         <figcaption>Example of an inference-based card component</figcaption>
                     </figure> 
                     
-                    <p>When defining the interactions users will have with these components and interactions between components, my primary goal was to create a cohesive and fluid experience across the platform to ensure it felt natural and consistent, not like several different agent experiences glued into one. Some of my main concerns and remediations were as follows:</p>
+                    <p>When defining the interactions users will have with these components and interactions between components, my primary goal was to create a cohesive and fluid experience across the platform to ensure it felt natural and consistent, not like several different agent experiences glued into one. Some of the core design principles and how that translated were as follows:</p>
                     
                     <ul>
-                        <li>Inference-based experiences should feel integrated and not like external add-ons to the product -> Content should be presented and interacted with the same as other existing experiences when possible</li>
-                        <li>Users should be able to move throughout the console without losing conversational, inference based context -> A user should be able to open the AI assistant and continue a task across various areas of the platfrom without losing context or help</li>
-                        <li>Ensure AI suggestions are clearly marked and distinguishable from other content -> Add a tag to identify AI created content</li>
+                        <li>Inference-based experiences should feel integrated, not additive -> interactions should extend existing workflows rather than interrupt them or feel like external tools. </li>
+                        <li>Context should persist across the platform -> A user should be able to open the AI assistant and continue a task across various areas of the platfrom without losing progress or context</li>
+                        <li>Transparency when displaying AI generated content -> Add a tag to identify AI created content</li>
                     </ul>
 
                     <p>Once the initial framework was defined, I needed to validate these changes with several stakeholder groups - product designers, PMs, and engineers. I ensured each group was represented by tagged them in the report to review, with plans to also schedule a meeting to review the proposed changes, questions and concerns folks may have, and what this might mean moving forward for work related to inference. See the full report <a href="https://docs.google.com/document/d/1h6zpc_3w0HwUsl7aaj230u0BAYEftKNaq4cE0qgP4h4/edit?tab=t.0#heading=h.gk87vvz5the6" target="_blank">here</a>.</p>

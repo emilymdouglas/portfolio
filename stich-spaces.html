@@ -26,16 +26,19 @@
             <div class="project-detail-grid">
                 <aside class="project-detail-aside">
                     <h2>Stich Spaces</h2>
-                    <p class="project-detail-disclaimer">A marketplace connecting local businesses and customers</p>
+                    <p class="project-detail-disclaimer">A marketplace for third spaces</p>
                     <p class="project-detail-role">Research • Wireframing • UI Design • Development • Information Architecture</p>
                     
                 </aside>
                 <div class="project-detail-copy">
-                    <p>A marketplace designed to connect local businesses with folks looking for unique venues and spaces to rent, the idea for Stich was sparked when a coworker and I struggled to find a place to sit and work at a local coffee shop. After initial research, we quickly learned these type of spaces are called third places and are <a href="https://www.linkedin.com/posts/stich-spaces_remotework-communityspace-thirdspace-activity-7171157608425349121-QJK6/?utm_source=share&utm_medium=member_desktop">essential to the wellbeing of communities</a>. Spurred by this knowledge and our own experiences, Stich was born.</p>
+                    <p>Stich began as an ambiguous opportunity: how might we make it easier for people to find and access reliable spaces to work, gather, and host events within their local communities?</p>
+
+                    <p>What started as a personal frustration quickly revealed a broader gap—while “third places” (spaces outside of home and work) are essential to community wellbeing, they are often difficult to discover, evaluate, and book, particularly at smaller businesses.</p>
+
+                    <p>I led the end-to-end design and development of Stich, defining the problem space, shaping the product direction, and building a functional marketplace connecting local businesses with users seeking flexible spaces. This work required navigating ambiguity across user needs, business models, and technical systems to bring a new product concept to life.</p>
+                    
                     <figure>
-
                         <img src="./images/Stich homepage.png" alt="Stich homepage">
-
                         <figcaption>Curious to see Stich in action? I'd be happy to walk through the full app on a call.</figcaption>
                     </figure>
                     
@@ -48,23 +51,39 @@
                     <p>What started out as an idea slowly evolved into an after hours start up. I became the design and development lead for the product and started thinking about what this application needed to accomplish. Akin to other startup ventures, I needed to take on other roles such as product management, marketing, and research as we attempted to understand what the problems our different users were looking to solve. After doing some guerrilla research, we found the following pain points:</p>
                     <p>Small business owners</p>                    
                     <ul>
-                        <li>Running a small business is challenging, time consuming, and stressful. Businesses want to simplify and streamline processes when possible.</li>
-                        <li>They're looking for ways to increase revenue and customer traffic</li>
-                        <li>They want to improve their customers' experience and satisfaction</li>
+                        <li>Limited tools to manage or monetize their space</li>
+                        <li>Desire to increase revenue and customer traffic</li>
+                        <li>Improve their customers' experience and satisfaction</li>
                     </ul>
+                    
                     <p>Customers</p>                    
                     <ul>
-                        <li>Want to know they can rely on a space available to sit at a business</li>
-                        <li>Desire additional information about the business before going (ex. Wifi and outlet availability, table sizes, noise level)</li>
-                        <li>Interested in unique venues for events but struggle to find and/or book, especially with small businesses since they can be hard to get in contact with</li>
+                        <li>Difficulty finding reliable places to work or gather</li>
+                        <li>Lack of visibility into critical details (WiFi, outlets, noise, seating availability)</li>
+                        <li>Friction in booking or reserving space, especially with smaller businesses</li>
                     </ul>
+
+                    <p>This led to the understaning that the problem was not just discovery of third spaces, but also a lack of structured access and reliability in how these spaces were used and booked. A marketplace model connecting businesses and users with structured booking offered the most potential to solve both sides of the problem.</p>
+                </div>
+                
+                <aside class="project-detail-aside">
+                    <h3>Defining the System</h3>
+                </aside>
+                <div class="project-detail-copy">
+                    <p>After initial research, I started to think about designing the system architecture across several dimensions: </p>
+                    <ul>
+                        <li>User layer: browsing, evaluating, and booking spaces</li>
+                        <li>Business layer: listing, managing, and monetizing spaces</li>
+                        <li>System layer: availability, booking logic, and state management</li>
+                    </ul>   
+                    <p>Some of the other challenges I needed to consider included enabling two-way communication between users and businesses, booking systems,ensuring data security and privacy, and creating a seamless experience across both mobile and desktop devices.</p>
                 </div>
 
                 <aside class="project-detail-aside">
                     <h3>Design & Development</h3>
                 </aside>
                 <div class="project-detail-copy">
-                    <p>Based on this information, I starting wire framing what the website should look like and the various workflows we wanted to target first. Similar to AirBnB, this site would allow businesses to post spaces they have available for events, remote workers, and other activities. Users are then able to browse available spaces and rent these spaces by the hour. The marketplace concept helps increase business discoverability, streamlines the booking process, and simplifies both business and customer processes with the goal of guaranteeing a spot at your favorite location.</p>
+                    <p>Based on these considerations, I started wire framing what the website should look like and the various workflows we wanted to target first. Similar to AirBnB, this site would allow businesses to post spaces they have available for events, remote workers, and other activities. Users are then able to browse available spaces and rent these spaces by the hour. The marketplace concept helps increase business discoverability, streamlines the booking process, and simplifies both business and customer processes with the goal of guaranteeing a spot at your favorite location.</p>
                     <p>Developing this concept required me to learn and think about things outside just the user workflows and UI I was accustomed to. I learned about using APIs, database design, states, how to structure responsive design, and so much more.  A few months later, we had a functional site. </p>
                     <figure>
 
@@ -80,18 +99,25 @@
                 </div>
                 
                 <aside class="project-detail-aside">
-                    <h3>Takeaways</h3>
+                    <h3>Outcome</h3>
                 </aside>
                 <div class="project-detail-copy">
+                    <p>This work resulted in a fully functional marketplace that:</p>
                     <ul>
-                        <li>It is VERY important to build information architecture so it can scale. It was always something I knew was important, but until I was designing our database system for Stich, I didn't know how time consuming it is to get wrong or need to modify after development has started. It's a challenging problem to solve, but the tricky complexity made smile.</li>
-                        <li>Development can be tricky at best and hair wrenching at worst. Button states, logic, backend workflows, and debugging are just a few of the many things that had me shaking my fists at my screen and increased my growing respect for developers.</li>
-                        <li>Product management and roadmaps are key to delivering a product that has the functionality users need, when they need it. I now better understand the job of PM and how challenging it can sometimes be to balance delivering functionality vs. requested features vs. aesthetic appeal.</li>
+                        <li>Enabled users to discover and book local spaces</li>
+                        <li>Provided businesses with a new revenue stream</li>
+                        <li>Validated the viability of structured access to third places</li>
                     </ul>
                     
-                    <p>After wearing all these hats, it's made me enjoy being a UX designer even more and appreciate the others on my team that are essential to delivering a finished and usable product. </p>
-
-                    <p>Wondering what's happening with Stich now? Well...as much work that went into it, I've decided to step away from it for now. The site is fully functional and ready to be used, but turns out going business to business and pitching Stich is something I hate with a burning passion. While I think Stich has so much potential, taking on the role of salesman is just not something I'm interested in actively pursuing at this point. So far now, it's just been a great learning experience and pet project to keep me busy.</p>
+                    <p>This work required balancing product needs with technical constraints and scalability and helped me to better understand the complexities of product development, including:</p>
+                    <ul>
+                        <li>The importance of defining the problem before designing solutions</li>
+                        <li>How information architecture and system design impact scalability</li>
+                        <li>The complexity of designing for two-sided marketplaces</li>
+                        <li>The role of cross-functional thinking in early-stage product development</li>
+                    </ul>
+                    
+                    <p>Wondering what's happening with Stich now? Well, as much work that went into it, I've decided to step away from it for now. The site is fully functional and ready to be used, but turns out going business to business and pitching Stich is not something I'm interested in at this time. So for now, it's just been a great learning experience to deepen my understanding of designing and building from 0 -> 1.</p>
                 </div>
             </div>
         </section>
