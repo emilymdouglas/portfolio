@@ -95,12 +95,12 @@ nav a:hover {
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 0rem 1rem;
 }
 
 .hero {
     text-align: center;
-    padding: 2rem 0;
+    padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,22 +110,22 @@ main {
 
 .hero h2 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .hero p {
     font-size: 1.25rem;
     color: #444444;
     max-width: 700px;
-    margin: 0 2rem;
+    margin: 1rem 2rem 1rem 2rem;
     text-align: center;
 }
 
 .hero p2 {
-    font-size: 1.0rem;
-    color: #575757;
-    max-width: 700px;
-    margin: 0 2rem;
+    font-size: 0.9rem;
+    color: #303030;
+    max-width: 500px;
+    margin: 1rem 2rem 0rem 2rem;
     text-align: center;
 }
 
@@ -140,6 +140,14 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 0 2rem;
+}
+
+.project-grid p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    line-height: 1.4;
+    text-align: left;
 }
 
 .project-card {
