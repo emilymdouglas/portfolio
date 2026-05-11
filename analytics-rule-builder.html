@@ -28,7 +28,7 @@
                 <aside class="project-detail-aside">
                     <h2>Designing an Analytics Rule Builder</h2>
                     <p>A practice in leveraging research to understand problems and inform solutions.</p>
-                    <p class="project-detail-role">UX Research • Data Analysis • UX Design • UI Design • End to End</p>
+                    <p class="project-detail-role">Enterprise Workflow Design • Configuration Systems • Research • Information Architecture</p>
                     
                     
                 </aside>
@@ -54,7 +54,7 @@
                     <h3>Research & Insights</h3>
                 </aside>
                 <div class="project-detail-copy">
-                    <p>To better understand the problem space, I conducted interviews with users and deployed an in-product survey targeting the analytics rule grid. Rather than validating specific ideas, the goal was to uncover how users approached rule creation, where breakdowns occurred, and how the system aligned (or didn't) with their mental models. In addition to this research, I mapped the end-to-end rule creation workflow to better understand how users moved through the rule building process - from rule ideation to creation to validation. This helped identify key breakdowns between steps, particularly where users lost visibility into how rules were constructed and executed.</p>
+                    <p>To better understand the problem space, I conducted interviews with several security analysts and platform administrators and deployed an in-product survey targeting the analytics rule grid. Rather than validating specific ideas, the goal was to uncover how users approached rule creation, where breakdowns occurred, and how the system aligned (or didn't) with their mental models. In addition to this research, I mapped the end-to-end rule creation workflow to better understand how users moved through the rule building process - from rule ideation to creation to validation. This helped identify key breakdowns between steps, particularly where users lost visibility into how rules were constructed and executed.</p>
 
                     <p>Sample of some findings and example recommendations:</p>
                     <ul>
@@ -102,14 +102,26 @@
 
                         <figcaption>UI ideas for rule builder improvements</figcaption>
                     </figure> 
-                    
+                </div>
+
+                <aside class="project-detail-aside">
+                    <h3>Constraints & Tradeoffs</h3>
+                </aside>
+                <div class="project-detail-copy">
+                    <p>While working on the analytics rule builder UI, there were several constraints to consider:</p>
+                    <ul>
+                        <li>Time and resource constraints - we were asked to get improvements implemented quickly, limiting the time we had for design and development. I opted to prioritize higher-impact changes that won't take as long to implement compared to ones that may make a bigger impact but take more time or engineering resources</li>
+                        <li>Technical limitations - in order to not lose all the work previously done, we needed to work within the existing interface configuration and backend logic already configured</li>
+                        <li>Flexibility vs Help - I needed to balance providing enough flexibility for power users while also offering helpful guidance for new users. The solution needed to limit cognitive load and prevent errors for all users when possible.</li>
+                        <li>Scalability - I needed to ensure the solution could handle more complex rule logic that might be added in the future. This included more rule block types, advanced rule block linking logic, and playbook features.</li>
+                    </ul>
                 </div>
 
                 <aside class="project-detail-aside">
                     <h3>Final Design</h3>
                 </aside>
                 <div class="project-detail-copy">
-                    <p><b>I landed on a final design that simplified the workflow and better utilized space </b>through expandable cards and a more vertical-based layout. This scaled better for smaller screens while still keeping relevant information visible and allowed for additional testing and guidance features in the builder. The redesign improved task success in usability testing (100% completion) and reduced confusion around rule structure. Additionally, the research findings directly informed roadmap prioritization, aligning product and engineering teams around a clearer set of user-driven improvements.</p>
+                    <p><b>I landed on a final design that simplified the workflow and better utilized space </b>through expandable cards and a more vertical-based layout. This scaled better for smaller screens while still keeping relevant information visible and allowed for additional testing and guidance features in the builder to reduce the rate of errors and cognitive load. The redesign improved task success in usability testing (100% completion) and reduced confusion around rule structure. Additionally, the research findings directly informed roadmap prioritization, aligning product and engineering teams around a clearer set of user-driven improvements.</p>
                     <figure>
                         <img src="./images/analytics rule builder final design + annotation.png" class="zoomable" tabindex="0" alt="final design of analytics rule builder">
 

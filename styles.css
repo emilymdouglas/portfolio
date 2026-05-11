@@ -121,6 +121,14 @@ main {
     text-align: center;
 }
 
+.hero p2 {
+    font-size: 1.0rem;
+    color: #575757;
+    max-width: 700px;
+    margin: 0 2rem;
+    text-align: center;
+}
+
 .projects h3 {
     text-align: left;
     font-size: 2rem;
@@ -274,6 +282,7 @@ ul {
 
 li {
     margin-bottom: 0.5rem;
+    font-size: 1 rem;
 }
 
 .project-detail-copy ul {
